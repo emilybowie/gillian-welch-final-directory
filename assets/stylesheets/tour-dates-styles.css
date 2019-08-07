@@ -5,22 +5,54 @@ body, html {
   font-size: 16px;
 }
 
+p {
+  font-family: Optima, Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* The hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/tour-date-icons/hero-photo-11.jpg");
+    /* Set a specific height */
   height: 50%;
-  background-position: center;
+    /* Position and center the image to scale nicely on all screens */
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
+    /* Place text in the to the right of the image */
 .hero-text {
   text-align: right;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 75%;
   transform: translate(-50%, -50%);
   color: white;
+  font-size: 24px
+}
+
+a:link {
+  color: #6ba7a6;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #857e28;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #718d96;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #cdc659;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 table,th, td {

@@ -1,32 +1,43 @@
+ul {
+  font-family:Optima, Arial, sans-serif;
+  font-size: 16px
+}
+
 body, html {
   height: 100%;
   margin: 0;
   font-family: Cochin, Georgia, serif;
-  font-size: 16px
+  font-size: 16px;
 }
 
+p {
+  font-family: Optima, Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* The hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/about/hero-gillian-field-bw.jpeg");
+    /* Set a specific height */
   height: 50%;
-  background-position: center;
+    /* Position and center the image to scale nicely on all screens */
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
+    /* Place text in the to the right of the image */
 .hero-text {
   text-align: right;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 75%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 24px
 }
-
-/*.h1 {
-  font-size: 48px
-}*/
 
 img {
   float: left;
