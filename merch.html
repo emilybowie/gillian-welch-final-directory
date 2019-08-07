@@ -10,5 +10,116 @@
         <h1>MERCHANDISE</h1>
     </div>
   </div>
+<h1>MERCHANDISE</h1>
+  <!-- Control buttons -->
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all items')">All Items</button>
+    <button class="btn" onclick="filterSelection('accessories')">Accessories</button>
+    <button class="btn" onclick="filterSelection('clothing')">Clothing</button>
+    <button class="btn" onclick="filterSelection('records')">Records</button>
+    <button class="btn" onclick="filterSelection('posters')">Posters</button>
+  </div>
+
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <div class="container">
+    <div class="filterDiv accessories">
+      <img src="./assets/images/merch/accessories/boots-and-hat-enamel-pin-set-$25.jpg" />
+    </div>
+    <div class="filterDiv accessories">
+      <img src="./assets/images/merch/accessories/guitars-enamel-pin-set-2.0-$25.jpg" />
+    </div>
+    <div class="filterDiv accessories">
+      <img src="./assets/images/merch/accessories/soul-journey-bandana-$10.jpg" />
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="filterDiv clothing">
+      <img src="./assets/images/merch/clothing/blue-heather-hawk-tee-$30.jpg" />
+    </div>
+    <div class="filterDiv clothing">
+      <img src="./assets/images/merch/clothing/white-long-sleeved-wayside-t-$35.jpg" />
+    </div>
+    <div class="filterDiv clothing">
+      <img src="./assets/images/merch/clothing/grey-miss-ohio-t-$30.jpg" />
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="filterDiv records">
+      <img src="./assets/images/merch/records/soul-journey-lp-$30.jpg" />
+    </div>
+    <div class="filterDiv records">
+      <img src="./assets/images/merch/records/the-harrow-and-the-harvest-lp-$30.jpg" />
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="filterDiv posters">
+      <img src="./assets/images/merch/posters/2018-july-tour-poster-$25.jpg" />
+    </div>
+    <div class="filterDiv posters">
+      <img src="./assets/images/merch/posters/2018-august-tour-poster-$25.jpg" />
+    </div>
+    <div class="filterDiv posters">
+      <img src="./assets/images/merch/posters/2018-september-tour-poster-$25.jpg" />
+    </div>
+    <div class="filterDiv posters">
+      <img src="./assets/images/merch/posters/2018-october-tour-poster-$25.jpg" />
+    </div>
+  </div>
+
+
+  <script>
+    filterSelection("all")
+
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all items") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+
 </body>
 </html>
