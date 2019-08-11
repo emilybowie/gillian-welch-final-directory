@@ -5,6 +5,11 @@ body, html {
   font-size: 16px;
 }
 
+h1 {
+  font-family: Cochin, Georgia, serif;
+  font-size: 72px;
+}
+
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */

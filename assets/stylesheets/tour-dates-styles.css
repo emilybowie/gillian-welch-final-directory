@@ -10,6 +10,19 @@ p {
   font-size: 16px;
 }
 
+h1 {
+  font-family: Cochin, Georgia, serif;
+  font-size: 72px;
+  padding-left: 100px;
+}
+
+h2 {
+  font-family: Cochin, Georgia, serif;
+  font-size: 36px;
+  padding-left: 100px;
+  padding-top: 25px;
+}
+
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -55,8 +68,17 @@ a:active {
   text-decoration: underline;
 }
 
-table,th, td {
-  padding: 10px;
+table,th,td {
+  padding: 15px;
+  font-family: Optima, Arial, sans-serif;
+  font-size: 16px;
+
+}
+
+.table-container {
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 100px;
 }
 
 th {

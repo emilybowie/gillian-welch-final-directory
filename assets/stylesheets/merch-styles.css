@@ -10,6 +10,18 @@ p {
   font-size: 16px;
 }
 
+h1 {
+  font-family: Cochin, Georgia, serif;
+  font-size: 72px;
+}
+
+h2 {
+  font-family: Cochin, Georgia, serif;
+  font-size: 36px;
+  padding-left: 100px;
+  padding-top: 25px;
+}
+
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -36,6 +48,7 @@ p {
 
 .container {
   overflow: hidden;
+  padding-left: 100px;
 }
 
 .filterDiv {
@@ -47,6 +60,7 @@ p {
   text-align: center;
   margin: 2px;
   display: none;
+
   /* Hidden by default */
 }
 
@@ -62,20 +76,28 @@ p {
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
+  padding-left: 100px;
+  color: black;
+  font-family: Cochin, Georgia, serif;
+  font-size: 20px;
 }
 
-/* Add a light grey background on mouse-over */
 .btn:hover {
-  background-color: #ddd;
+  background-color: white;
+  color: black;
+  font-family: Cochin, Georgia, serif;
+  font-size: 20px;
 }
 
-/* Add a dark background to the active button */
 .btn.active {
-  background-color: #666;
-  color: white;
+  background-color: white;
+  color: black;
+  font-family: Cochin, Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.img {
+img {
   width: 100%;
   height: auto;
   display: block;
