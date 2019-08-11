@@ -6,6 +6,37 @@
   <link href="./assets/stylesheets/slick.css" rel="stylesheet" />
   <link href="./assets/stylesheets/slick-theme.css" rel="stylesheet" />
 
+  <style>
+    .topnav {
+      overflow: hidden;
+      background-color: WHITE;
+    }
+
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: Cochin, Georgia, serif;
+      font-size: 16px;
+    }
+
+    .topnav a:hover {
+      background-color: white;
+      color: #857e28;
+      font-family: Cochin, Georgia, serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .topnav a.active {
+      background-color: white;
+      color: #6ba7a6;
+      font-weight: bold;
+    }
+</style>
+
 <style>
 body {
   background: white;
@@ -23,6 +54,16 @@ body {
 
 </head>
 <body>
+
+  <div class="topnav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a class="active" href="discography.html">DISCOGRAPHY</a>
+    <a href="tour-dates.html">TOUR</a>
+    <a href="merch.html">MERCHANDISE</a>
+    <a href="media.html">MEDIA</a>
+  </div>
+
   <div class="hero-image">
     <div class="hero-text">
   <h1>DISCOGRAPHY</h1>
@@ -100,6 +141,6 @@ body {
     });
   });
 </script>
-</p>  
+</p>
 </body>
 </html>
