@@ -3,41 +3,12 @@
 <head>
   <title>Merchandise</title>
   <link href="./assets/stylesheets/merch-styles.css" rel="stylesheet"/>
-
-  <style>
-    .topnav {
-      overflow: hidden;
-      background-color: WHITE;
-    }
-
-    .topnav a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-family: Cochin, Georgia, serif;
-      font-size: 16px;
-    }
-
-    .topnav a:hover {
-      background-color: white;
-      color: #857e28;
-      font-family: Cochin, Georgia, serif;
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    .topnav a.active {
-      background-color: white;
-      color: #6ba7a6;
-      font-weight: bold;
-    }
-</style>
-
+  <link href="./assets/stylesheets/styles.css" rel="stylesheet"/>
 </head>
+
 <body>
 
+<!--Header-->
   <div class="topnav">
     <a href="index.html">HOME</a>
     <a href="about.html">ABOUT</a>
@@ -47,11 +18,13 @@
     <a href="media.html">MEDIA</a>
   </div>
 
+<!--Hero image and text-->
   <div class="hero-image">
     <div class="hero-text">
         <h1>MERCHANDISE</h1>
     </div>
   </div>
+
 <h2>MERCHANDISE</h2>
   <!-- Control buttons -->
   <div id="myBtnContainer">
@@ -73,9 +46,6 @@
     <div class="filterDiv accessories">
       <img src="./assets/images/merch/accessories/soul-journey-bandana-$10.jpg" />
     </div>
-  </div>
-
-  <div class="container">
     <div class="filterDiv clothing">
       <img src="./assets/images/merch/clothing/blue-heather-hawk-tee-$30.jpg" />
     </div>
@@ -85,18 +55,15 @@
     <div class="filterDiv clothing">
       <img src="./assets/images/merch/clothing/grey-miss-ohio-t-$30.jpg" />
     </div>
-  </div>
-
-  <div class="container">
     <div class="filterDiv records">
       <img src="./assets/images/merch/records/soul-journey-lp-$30.jpg" />
     </div>
     <div class="filterDiv records">
       <img src="./assets/images/merch/records/the-harrow-and-the-harvest-lp-$30.jpg" />
     </div>
-  </div>
-
-  <div class="container">
+    <div class="filterDiv records">
+      <img src="./assets/images/merch/records/nashville-obsolete-lp-$28.jpg" />
+    </div>
     <div class="filterDiv posters">
       <img src="./assets/images/merch/posters/2018-july-tour-poster-$25.jpg" />
     </div>
@@ -106,19 +73,16 @@
     <div class="filterDiv posters">
       <img src="./assets/images/merch/posters/2018-september-tour-poster-$25.jpg" />
     </div>
-    <div class="filterDiv posters">
-      <img src="./assets/images/merch/posters/2018-october-tour-poster-$25.jpg" />
-    </div>
   </div>
 
 
   <script>
-    filterSelection("all items")
+    filterSelection("all")
 
     function filterSelection(c) {
       var x, i;
       x = document.getElementsByClassName("filterDiv");
-      if (c == "all items") c = "";
+      if (c == "all") c = "";
       // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
       for (i = 0; i < x.length; i++) {
         w3RemoveClass(x[i], "show");

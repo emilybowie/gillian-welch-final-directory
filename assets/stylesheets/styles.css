@@ -1,0 +1,228 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Cochin, Georgia, serif;
+  font-size: 16px;
+}
+
+
+ul {
+  font-family:Optima, Arial, sans-serif;
+  font-size: 16px
+}
+
+h1 {
+  font-family: Cochin, Georgia, serif;
+  font-size: 72px;
+}
+
+h2 {
+  font-family: Cochin, Georgia, serif;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: Cochin, Georgia, serif;
+  font-size: 36px;
+  padding-top: 175px;
+}
+
+p {
+  font-family: Optima, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0px;
+}
+
+.flex-container .box-left {
+  width: 50%;
+  margin: 0px;
+  text-align: justify;
+  line-height: 20px;
+  font-size: 16px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+}
+
+.flex-container .box-right {
+  width: 50%;
+  margin: 0px;
+  text-align: justify;
+  line-height: 20px;
+  font-size: 16px;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+}
+
+img {
+  float: left;
+  margin-right: 15px;
+}
+
+div {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: white;
+  color: white;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+a:link {
+  color: #6ba7a6;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #6ba7a6;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #718d96;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #cdc659;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+table,th,td {
+  padding: 15px;
+  font-family: Optima, Arial, sans-serif;
+  font-size: 16px;
+
+}
+
+.table-container {
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+}
+
+th {
+  text-align: left;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: WHITE;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Cochin, Georgia, serif;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: #857e28;
+  font-family: Cochin, Georgia, serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: #6ba7a6;
+  font-weight: bold;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.fa {
+padding: 10px;
+font-size: 30px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #6ba7a6;
+  color: white;
+}
+
+.fa-twitter {
+background: #6ba7a6;
+color: white;
+}
+
+
+.fa-instagram {
+background: #6ba7a6;
+color: white;
+}
+
+.fa-spotify {
+background: #6ba7a6;
+color: white;
+}

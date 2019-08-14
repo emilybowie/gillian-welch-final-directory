@@ -49,8 +49,10 @@ h2 {
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-  padding-left: 100px;
-  padding-right: 100px;
+}
+
+.flex-container-margin {
+  padding-left:100px;
 }
 
 .flex-container .box {
@@ -64,4 +66,5 @@ h2 {
 .photo-grid {
   padding-left: 100px;
   padding-right: 100px;
+  margin-bottom: 10px;
 }
